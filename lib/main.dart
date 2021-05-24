@@ -40,7 +40,7 @@ class _HomeState extends State<Home> {
       home: Scaffold(
           body: Center(
         child: Column(children: [
-          SizedBox(height: 40),
+          SizedBox(height: 50),
           ElevatedButton(
             onPressed: () {
               Navigator.push(
