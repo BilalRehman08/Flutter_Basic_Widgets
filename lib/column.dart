@@ -11,6 +11,7 @@ class _ColumnExampleState extends State<ColumnExample> {
     return MaterialApp(
         home: Scaffold(
             body: Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Text("1st Column"),
         Text("2nd Column"),

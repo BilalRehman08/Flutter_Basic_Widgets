@@ -6,8 +6,27 @@ void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+      body: Home(),
+    ));
+  }
+}
+
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,33 +36,53 @@ class MyApp extends StatelessWidget {
         child: Column(children: [
           SizedBox(height: 40),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AppBarExample()),
+              );
+            },
             child: Text("AppBar Example"),
           ),
           SizedBox(height: 10),
           ElevatedButton(
-            onPressed: () {},
-            child: Text("AppBar Example"),
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => AppBarExample()));
+            },
+            child: Text("Elevated Button Example"),
           ),
           SizedBox(height: 10),
           ElevatedButton(
-            onPressed: () {},
-            child: Text("AppBar Example"),
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => AppBarExample()));
+            },
+            child: Text("Column Example"),
           ),
           SizedBox(height: 10),
           ElevatedButton(
-            onPressed: () {},
-            child: Text("AppBar Example"),
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => AppBarExample()));
+            },
+            child: Text("Container Example"),
           ),
           SizedBox(height: 10),
           ElevatedButton(
-            onPressed: () {},
-            child: Text("AppBar Example"),
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => AppBarExample()));
+            },
+            child: Text("Row Example"),
           ),
           SizedBox(height: 10),
           ElevatedButton(
-            onPressed: () {},
-            child: Text("AppBar Example"),
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => AppBarExample()));
+            },
+            child: Text("TextField Example"),
           ),
         ]),
       )),
