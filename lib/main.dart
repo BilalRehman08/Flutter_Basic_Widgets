@@ -1,5 +1,6 @@
 import 'package:basic_widgets/column.dart';
 import 'package:basic_widgets/container.dart';
+import 'package:basic_widgets/row.dart';
 import 'package:flutter/material.dart';
 
 import 'appBar.dart';
@@ -74,7 +75,7 @@ class _HomeState extends State<Home> {
           ElevatedButton(
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => AppBarExample()));
+                  MaterialPageRoute(builder: (context) => RowExample()));
             },
             child: Text("Row Example"),
           ),
