@@ -1,3 +1,4 @@
+import 'package:basic_widgets/TextField.dart';
 import 'package:basic_widgets/column.dart';
 import 'package:basic_widgets/container.dart';
 import 'package:basic_widgets/row.dart';
@@ -18,9 +19,10 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
-      body: Home(),
-    ));
+          body: Home(),
+        ));
   }
 }
 
@@ -83,7 +85,7 @@ class _HomeState extends State<Home> {
           ElevatedButton(
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => AppBarExample()));
+                  MaterialPageRoute(builder: (context) => TextFieldExample()));
             },
             child: Text("TextField Example"),
           ),
