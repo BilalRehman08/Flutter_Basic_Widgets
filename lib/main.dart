@@ -12,7 +12,41 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: AppBarExample()),
+      home: Scaffold(
+          body: Center(
+        child: Column(children: [
+          SizedBox(height: 40),
+          ElevatedButton(
+            onPressed: () {},
+            child: Text("AppBar Example"),
+          ),
+          SizedBox(height: 10),
+          ElevatedButton(
+            onPressed: () {},
+            child: Text("AppBar Example"),
+          ),
+          SizedBox(height: 10),
+          ElevatedButton(
+            onPressed: () {},
+            child: Text("AppBar Example"),
+          ),
+          SizedBox(height: 10),
+          ElevatedButton(
+            onPressed: () {},
+            child: Text("AppBar Example"),
+          ),
+          SizedBox(height: 10),
+          ElevatedButton(
+            onPressed: () {},
+            child: Text("AppBar Example"),
+          ),
+          SizedBox(height: 10),
+          ElevatedButton(
+            onPressed: () {},
+            child: Text("AppBar Example"),
+          ),
+        ]),
+      )),
     );
   }
 }
