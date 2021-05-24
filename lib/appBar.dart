@@ -1,14 +1,20 @@
 import 'package:flutter/material.dart';
 
-class Appbar extends StatelessWidget {
+class AppBarExample extends StatefulWidget {
+  @override
+  _AppBarExampleState createState() => _AppBarExampleState();
+}
+
+class _AppBarExampleState extends State<AppBarExample> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
-      appBar: AppBar(
-        title: Text("AppBar Example"),
-      ),
-    ));
+          appBar: AppBar(
+            title: Text("AppBar Example"),
+          ),
+        ));
   }
 }
 
