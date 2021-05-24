@@ -1,3 +1,5 @@
+import 'package:basic_widgets/column.dart';
+import 'package:basic_widgets/container.dart';
 import 'package:flutter/material.dart';
 
 import 'appBar.dart';
@@ -56,7 +58,7 @@ class _HomeState extends State<Home> {
           ElevatedButton(
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => AppBarExample()));
+                  MaterialPageRoute(builder: (context) => ColumnExample()));
             },
             child: Text("Column Example"),
           ),
@@ -64,7 +66,7 @@ class _HomeState extends State<Home> {
           ElevatedButton(
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => AppBarExample()));
+                  MaterialPageRoute(builder: (context) => ContainerExample()));
             },
             child: Text("Container Example"),
           ),
